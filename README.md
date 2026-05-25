@@ -1,47 +1,76 @@
-# Basic EMS using Spring Boot and React
+# EMS Frontend using React
 
-Employee Management System built using:
-
-- Spring Boot
-- React JS
-- MySQL
-- REST API
+Frontend application for the Employee Management System (EMS) built using React JS.
 
 ## Features
 
+- View Employees
 - Add Employee
 - Update Employee
 - Delete Employee
-- View Employee List
-- Backend API using Spring Boot
-- Frontend using React
+- Connects with Spring Boot REST API
+- Responsive UI
 
 ## Technologies Used
 
-### Frontend
-- React
+- React JS
 - Axios
 - Bootstrap
+- JavaScript
+- HTML
+- CSS
 
-### Backend
-- Spring Boot
-- Spring Data JPA
-- MySQL
+## Project Structure
 
-## How to Run
+```text
+src
+ ├── components
+ ├── services
+ ├── App.js
+ └── index.js
+```
 
-### Backend
+## Installation and Setup
 
-1. Open backend project
-2. Configure MySQL in `application.properties`
-3. Run Spring Boot application
+### Clone Repository
 
-### Frontend
+```bash
+git clone https://github.com/YOUR_USERNAME/EMS-Frontend-React.git
+```
+
+### Install Dependencies
 
 ```bash
 npm install
+```
+
+### Start React Application
+
+```bash
 npm start
 ```
+
+Application runs on:
+
+```text
+http://localhost:3000
+```
+
+## Backend Connection
+
+Make sure Spring Boot backend is running before starting the frontend.
+
+Default backend API:
+
+```text
+http://localhost:8080
+```
+
+## Screenshots
+
+- Employee List Page
+- Add Employee Page
+- Update Employee Page
 
 ## Author
 
