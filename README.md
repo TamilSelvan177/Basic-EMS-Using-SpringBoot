@@ -1,76 +1,87 @@
-# EMS Frontend using React
+# EMS Backend using Spring Boot
 
-Frontend application for the Employee Management System (EMS) built using React JS.
+Backend application for the Employee Management System (EMS) built using Spring Boot.
 
 ## Features
 
-- View Employees
+- REST API for Employee Management
 - Add Employee
 - Update Employee
 - Delete Employee
-- Connects with Spring Boot REST API
-- Responsive UI
+- Get Employee Details
+- MySQL Database Integration
+- Spring Data JPA
 
 ## Technologies Used
 
-- React JS
-- Axios
-- Bootstrap
-- JavaScript
-- HTML
-- CSS
+- Java
+- Spring Boot
+- Spring Data JPA
+- MySQL
+- Maven
 
 ## Project Structure
 
 ```text
-src
- ├── components
- ├── services
- ├── App.js
- └── index.js
+src/main/java
+ ├── controller
+ ├── service
+ ├── repository
+ ├── entity
+ └── EMSApplication.java
 ```
 
-## Installation and Setup
+## API Endpoints
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | /api/employees | Get all employees |
+| GET | /api/employees/{id} | Get employee by ID |
+| POST | /api/employees | Add employee |
+| PUT | /api/employees/{id} | Update employee |
+| DELETE | /api/employees/{id} | Delete employee |
+
+## Database Configuration
+
+Configure MySQL details in:
+
+```text
+src/main/resources/application.properties
+```
+
+Example:
+
+```properties
+spring.datasource.url=jdbc:mysql://localhost:3306/ems
+spring.datasource.username=root
+spring.datasource.password=yourpassword
+spring.jpa.hibernate.ddl-auto=update
+```
+
+## Run the Project
 
 ### Clone Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/EMS-Frontend-React.git
+git clone https://github.com/YOUR_USERNAME/EMS-Backend-SpringBoot.git
 ```
 
-### Install Dependencies
+### Run using Maven
 
 ```bash
-npm install
+mvn spring-boot:run
 ```
 
-### Start React Application
-
-```bash
-npm start
-```
-
-Application runs on:
-
-```text
-http://localhost:3000
-```
-
-## Backend Connection
-
-Make sure Spring Boot backend is running before starting the frontend.
-
-Default backend API:
+Backend runs on:
 
 ```text
 http://localhost:8080
 ```
 
-## Screenshots
+## Tested Using
 
-- Employee List Page
-- Add Employee Page
-- Update Employee Page
+- Postman
+- React Frontend
 
 ## Author
 
